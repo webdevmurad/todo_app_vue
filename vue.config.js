@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/todo_app_vue'
+    publicPath: '/todo_app_vue/'
 }
