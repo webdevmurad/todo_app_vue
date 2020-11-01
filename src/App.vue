@@ -14,6 +14,7 @@
                     :completed="task.completed"
                     :index="index"
                     @onToggleCompleted="onToggleCompleted"
+                    @onRemoveTask="onRemoveTask"
                 )
 </template>
 
@@ -40,8 +41,10 @@ export default {
         onToggleCompleted(index) {
             this.tasks[index].completed = !this.tasks[index].completed
         },
+        onRemoveTask(index) {
+            this.tasks.splice(index, 1)
+        },
         onAddTask(text) {
-            console.log(text)
             this.tasks.push({
                 text,
                 completed: false
@@ -152,6 +155,8 @@ export default {
                     cursor: pointer
                     fill: red
     &-list 
+        overflow: auto
+        height: calc( 100% - 136px ) 
         &__completed 
             .todo__list-item-check svg 
                 transition: 0.3s
