@@ -1,4 +1,3 @@
-![alt text](/src/assets/stekVue.png)
 
 Мой первый проект на Vue. 
 
