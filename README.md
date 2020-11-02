@@ -1,6 +1,8 @@
 
 Мой первый проект на Vue. 
 
+![alt text](/src/assets/stekVue.png)
+
 Стэк: Vue, Jade(Pug), SASS(styles)
 
 ##############################################
